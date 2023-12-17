@@ -300,6 +300,7 @@ export default function ComputerTroubleShoot() {
               (<p><span className='hard'>Hardware </span><span>{rulesData.find((rules) => rules.factValue === selectedHardware)?.factValue || null} </span></p> )
             }
           </div> 
+          {/* comment */}
           <div className='prompt'>
             <p>
               <span>Prompt:</span> {reply === null
