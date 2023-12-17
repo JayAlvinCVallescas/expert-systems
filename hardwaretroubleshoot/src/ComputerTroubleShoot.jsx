@@ -112,7 +112,7 @@ export default function ComputerTroubleShoot() {
     es.factsImport(factsData);
 
     const factWanted = es.factGet("hardwareToTroubleshoot");
-    console.log(factWanted);
+    console.log(factWanted.value);
     setSelectedHardware(hardware);
     showHardwareButtons(false);
     showOptionButtons(true);
@@ -282,8 +282,6 @@ export default function ComputerTroubleShoot() {
     setHardwareDetails(false);
   }
 
-
-  // Set the initial reply when the user selects 'mouse'
   return (
     <div className='container'>
       <div className='content'>
